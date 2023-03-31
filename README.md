@@ -26,6 +26,7 @@ I would have liked to have more Arduino inputs in the project as the only curren
 
 
 Links to Inspirations for the project: 
+
 (1) Draw generative sine-wave animations - tutorial: openFrameworks superBasics e10 – YouTube
 
 (1) Control 16 LEDs with openFrameworks and Arduino – YouTube

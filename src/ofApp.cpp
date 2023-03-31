@@ -1,8 +1,8 @@
 #include "ofApp.h"
 
 int sendData = 0; // Variable to send data to Arduino
-bool hasMouseBeenPressed = false;
-int clickCount = 0;
+bool hasMouseBeenPressed = false; // Initialise Mouse click status to false
+int clickCount = 0; // Initialise click counter to zero
 
 
 void ofApp::setup() {
@@ -21,9 +21,8 @@ void ofApp::setup() {
 
 void ofApp::update() {
     if (serialMessage) {
-        serialMessage = false;  //
+        serialMessage = false;  // If there is no serial message send data
         serial.writeByte(sendData); // sending the data to arduino
-
         serial.readBytes(receivedData, 5); // Getting the data from Arduino
         printf("receivedData is %d \n", receivedData);    // Printing in ASCII format
     }
@@ -160,7 +159,7 @@ void ofApp::mousePressed(int x, int y, int button) {
     sendData = hasMouseBeenPressed ? 1 : 0; // Set the data to be sent to Arduino
     hasMouseBeenPressed = true;
     if (button == OF_MOUSE_BUTTON_LEFT) {
-        clickCount++;
+        clickCount++; // if button has been clicked store in clickCounter
     }
    
 }

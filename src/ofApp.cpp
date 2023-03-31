@@ -144,14 +144,8 @@ void ofApp::draw() {
         }
         break;
     }
-
+    }  
     }
-
-   
-    }
-
-
-
 
 void ofApp::mousePressed(int x, int y, int button) {
    

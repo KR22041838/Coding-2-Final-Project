@@ -1,7 +1,7 @@
 
-const int PIN_RED   = 5;
-const int PIN_GREEN = 6;
-const int PIN_BLUE  = 7;
+const int PIN_RED   = 5; //red LED
+const int PIN_GREEN = 6; //GREEN LED
+const int PIN_BLUE  = 7; //BLUE LED
 
 int state = 0; 
 
@@ -25,8 +25,9 @@ static int charCount = 0; // keep track of the number of times '1' is detected
       digitalWrite(PIN_GREEN, 0); // Change the state of the first LED
       digitalWrite(PIN_RED, 225); // Change the state of the first LED
       digitalWrite(PIN_BLUE, 0); // Change the state of the first LED
-      
-      if (inByte == 1) {   // Whether the received data is '0'
+ 
+        // If data recived = 1 turn green LED on   
+      if (inByte == 1) {   // Whether the received data is '1'
         // charCount++; // increment the count of '1' detections
         digitalWrite(PIN_BLUE, 0); // Change the state of the first LED
         digitalWrite(PIN_GREEN, 225); // Change the state of the first LED

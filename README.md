@@ -1,8 +1,8 @@
-#VIDEO FLASH TRIGGER WARNING:
+# VIDEO FLASH TRIGGER WARNING:
 
 
 
-#Coding 2 Final Project
+# Coding 2 Final Project
 
 This project consists of combining and expanding on two assignments set in class. One of the assignments I chose was the recreation of a Coding1 homework – animation, and the other assignment was using OpenFrameworks with Arduino.
 
